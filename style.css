@@ -154,7 +154,7 @@ body {
 
 
 .card-1 {
-    background: url("https://umarafshar.github.io/kodex-gsap/Assets/card1.webp");
+    background: url("./Assets/card1.webp");
     background-size: cover;
     padding: 3rem;
     top: 10%;
@@ -164,7 +164,7 @@ body {
 }
 
 .card-2 {
-    background: url("https://umarafshar.github.io/kodex-gsap/Assets/card2.webp");
+    background: url("./Assets/card2.webp");
     background-size: cover;
     padding: 3rem;
     display: grid;
@@ -173,7 +173,7 @@ body {
 }
 
 .card-3 {
-    background: url("https://umarafshar.github.io/kodex-gsap/Assets/card3.webp");
+    background: url("./Assets/card3.webp");
     background-size: cover;
     padding: 3rem;
     display: grid;
@@ -182,7 +182,7 @@ body {
 }
 
 .card-4 {
-    background: url("https://umarafshar.github.io/kodex-gsap/Assets/card4.webp");
+    background: url("./Assets/card4.webp");
     background-size: cover;
     padding: 3rem;
 }
