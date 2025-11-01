@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.hero {
+    height: 110vh;
+    width: 100%;
+    background: radial-gradient(rgba(0, 0, 0, .8) 2%, rgba(0, 0, 0, 1) 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & .HeroVideo {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(100%);
+    opacity: 0.4;
+    z-index: -1;
+}
+
+}
+
+.title, .title2 {
+    background: radial-gradient(46.73% 118.81% at 50% 38.57%, #ffffff 25%, #535353 100%);
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    z-index: 20;
+    font-size: 7rem;
+    font-weight: 400;
+}
+
+.title-des {
+    background: radial-gradient(46.73% 118.81% at 50% 38.57%, #ffffff 25%, #535353 100%);
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    z-index: 20;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+ .hero-cta{
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.472);
+    border-radius: 5rem;
+    margin: 3rem 0;
+    border: 1px solid rgba(255, 255, 255, 0.421);
+ }
+
+ .hero-cta:hover{
+    background-color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+ }
+
+.feature {
+    min-height: 120vh;
+    width: 100%;
+    background-color: white;
+    padding: 8rem 3rem;
+    border-radius: 5rem;
+    overflow: hidden;
+    margin-top: -5rem;
+    position: relative;
+    z-index: 20;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 8rem;
+
+    & .about__title{
+        font-weight: 300;
+    }
+
+    & .about__content{
+        font-size: 3rem;
+    }
+
+    & .about__content span{
+        color: rgba(176, 176, 176,1);
+
+    }
+
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4rem 0;
+    
+    & h3 {
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    & p {
+        font-size: 1.3rem;
+        color: #7d7d7d;
+    }
+}
+
+.feature__title {
+    padding-top: 5rem;
+    text-align: center;
+    margin-bottom: -7rem;
+}
+
+
+.main {
+    height: 100vh;
+    width: 100%;
+    /* background: radial-gradient(rgba(255, 255, 255, 0.85), rgb(186, 184, 184)); */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    /* position: relative; */
+    perspective: 1000px;
+}
+
+.card {
+        width: 85%;
+        height: 80vh;
+        border-radius: 1rem;
+        /* box-shadow: 0 0 20px 18px rgba(156, 156, 156, 0.169); */
+        position: absolute;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 200;
+        top: 100%;
+        /* transform-origin: top left; */
+    }
+
+
+.card-1 {
+    background: url("/Assets/card1.webp");
+    background-size: cover;
+    padding: 3rem;
+    top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18rem;
+}
+
+.card-2 {
+    background: url("/Assets/card2.webp");
+    background-size: cover;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18rem;
+}
+
+.card-3 {
+    background: url("/Assets/card3.webp");
+    background-size: cover;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18rem;
+}
+
+.card-4 {
+    background: url("/Assets/card4.webp");
+    background-size: cover;
+    padding: 3rem;
+}
+
+.left{
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        justify-content: space-between;
+
+        & h2 {
+            font-size: 5.5rem;
+            font-weight: 300;
+            line-height: 0.9em;
+        }
+
+        & p{
+            order: -1;
+            width: 70%;
+            font-weight: 300;
+        }
+    }
+
+.right{
+        display: flex;
+        font-size: 1.5rem;
+        align-items: center;
+        padding: 0 3rem 0 12rem;
+    }
+
+.footer {
+    height: 110vh;
+    width: 100%;
+    background: radial-gradient(rgba(0, 0, 0, 0.85), rgb(0, 0, 0));
+    display: flex;
+    place-content: center;
+    align-items: center;
+    margin-top: -5rem;
+}
